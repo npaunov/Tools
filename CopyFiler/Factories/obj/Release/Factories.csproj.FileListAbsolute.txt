@@ -1,0 +1,4 @@
+C:\Users\NPaunov\Downloads\Google Drive\Tools\CopyFiler\Factories\bin\Release\Factories.dll
+C:\Users\NPaunov\Downloads\Google Drive\Tools\CopyFiler\Factories\bin\Release\Factories.pdb
+C:\Users\NPaunov\Downloads\Google Drive\Tools\CopyFiler\Factories\obj\Release\Factories.dll
+C:\Users\NPaunov\Downloads\Google Drive\Tools\CopyFiler\Factories\obj\Release\Factories.pdb

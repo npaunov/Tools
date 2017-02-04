@@ -1,0 +1,10 @@
+C:\Users\NPaunov\Downloads\Google Drive\Tools\CopyFiler\Factories\bin\Debug\Factories.dll
+C:\Users\NPaunov\Downloads\Google Drive\Tools\CopyFiler\Factories\bin\Debug\Factories.pdb
+C:\Users\NPaunov\Downloads\Google Drive\Tools\CopyFiler\Factories\obj\Debug\Factories_MarkupCompile.cache
+C:\Users\NPaunov\Downloads\Google Drive\Tools\CopyFiler\Factories\obj\Debug\Factories_MarkupCompile.lref
+C:\Users\NPaunov\Downloads\Google Drive\Tools\CopyFiler\Factories\obj\Debug\Resources\ButtonStyle.baml
+C:\Users\NPaunov\Downloads\Google Drive\Tools\CopyFiler\Factories\obj\Debug\Resources\Colors.baml
+C:\Users\NPaunov\Downloads\Google Drive\Tools\CopyFiler\Factories\obj\Debug\Factories.g.resources
+C:\Users\NPaunov\Downloads\Google Drive\Tools\CopyFiler\Factories\obj\Debug\Factories.dll
+C:\Users\NPaunov\Downloads\Google Drive\Tools\CopyFiler\Factories\obj\Debug\Factories.pdb
+C:\Users\NPaunov\Downloads\Google Drive\Tools\CopyFiler\Factories\obj\Debug\Factories.csprojResolveAssemblyReference.cache

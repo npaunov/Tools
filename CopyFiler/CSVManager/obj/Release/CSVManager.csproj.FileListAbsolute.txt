@@ -1,0 +1,4 @@
+C:\Users\NPaunov\Downloads\Google Drive\Tools\CopyFiler\CSVManager\bin\Release\CSVManager.dll
+C:\Users\NPaunov\Downloads\Google Drive\Tools\CopyFiler\CSVManager\bin\Release\CSVManager.pdb
+C:\Users\NPaunov\Downloads\Google Drive\Tools\CopyFiler\CSVManager\obj\Release\CSVManager.dll
+C:\Users\NPaunov\Downloads\Google Drive\Tools\CopyFiler\CSVManager\obj\Release\CSVManager.pdb
