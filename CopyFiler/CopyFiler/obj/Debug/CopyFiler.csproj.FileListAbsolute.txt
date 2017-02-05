@@ -23,3 +23,5 @@ C:\Users\NPaunov\Downloads\Google Drive\Tools\CopyFiler\CopyFiler\bin\Debug\Copy
 C:\Users\NPaunov\Downloads\Google Drive\Tools\CopyFiler\CopyFiler\bin\Debug\CopyFiler.application
 C:\Users\NPaunov\Downloads\Google Drive\Tools\CopyFiler\CopyFiler\obj\Debug\CopyFiler.exe.manifest
 C:\Users\NPaunov\Downloads\Google Drive\Tools\CopyFiler\CopyFiler\obj\Debug\CopyFiler.application
+C:\Users\NPaunov\Downloads\Google Drive\Tools\CopyFiler\CopyFiler\bin\Debug\Calculations.dll
+C:\Users\NPaunov\Downloads\Google Drive\Tools\CopyFiler\CopyFiler\bin\Debug\Calculations.pdb

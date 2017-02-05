@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSVManager", "CSVManager\CS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Factories", "Factories\Factories.csproj", "{DF8AED13-21DA-4AD1-8C4C-096DB906ED8E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculations", "Calculations\Calculations.csproj", "{10BBEFF6-6483-41F7-90E5-E631E5F63097}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{DF8AED13-21DA-4AD1-8C4C-096DB906ED8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DF8AED13-21DA-4AD1-8C4C-096DB906ED8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DF8AED13-21DA-4AD1-8C4C-096DB906ED8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10BBEFF6-6483-41F7-90E5-E631E5F63097}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10BBEFF6-6483-41F7-90E5-E631E5F63097}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10BBEFF6-6483-41F7-90E5-E631E5F63097}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10BBEFF6-6483-41F7-90E5-E631E5F63097}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

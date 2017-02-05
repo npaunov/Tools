@@ -45,6 +45,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ButtonCustom.cs" />
+    <Compile Include="Create.cs" />
     <Compile Include="GridCustom.cs" />
     <Compile Include="StackPanelCustom .cs" />
     <Compile Include="ImageCustom.cs" />
@@ -64,6 +65,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\FolderIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Calculations\Calculations.csproj">
+      <Project>{10bbeff6-6483-41f7-90e5-e631e5f63097}</Project>
+      <Name>Calculations</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -10,6 +10,7 @@ using System.Windows.Controls;
 using System.Drawing;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Collections.Specialized;
 
 namespace CopyFiler
 {
@@ -32,37 +33,21 @@ namespace CopyFiler
         private void LoadData()
         {
             DAdress_text = LoadAddresText();
-            LoadFilesToStack(Grid_Addresses);
+            LoadFilesToStack(Grid_Addresses, Properties.Settings.Default.CustomerPaths);
         }
 
-        private void Button_AddProject_Click(object sender, RoutedEventArgs e)
+        private void Button_Copy_Click(object sender, RoutedEventArgs e)
         {
-            //string[] temp = new string[2] { "aa", "bb" };
-            //List<string[]> myList = new List<string[]>();
-            //myList.Add(temp);
-
-
-            //var a = CSVManager.CSVReader.GetData(@"C:\Users\NPaunov\Downloads\Google Drive\Tools\CopyFiler\CopyFiler\Data\DefaultAddress.csv", Globals.DA_Separator);
-            //CSVManager.CSVWriter.WriteData(myList, @"C:\Users\NPaunov\Downloads\Google Drive\Tools\CopyFiler\CopyFiler\Data\DefaultAddress.csv", Globals.DA_Separator);
-
-            //StackPanelCustom newPanel = new StackPanelCustom();
-
-            //newPanel.Name = "aa";
-
-            //Button button = new Button();
-            //button.Content = "mybutton";
-
-            //newPanel.Children.Add(button);
-
-            //projectStack.Children.Add(newPanel);
-
-
+            foreach (var fileSource in Properties.Settings.Default.CustomerPaths)
+            {
+                FileUse.Copy(fileSource, Properties.Settings.Default.DefaultPatfh);
+            }
         }
         private void Grid_Addresses_Drop(object sender, DragEventArgs e)
         {
             string[] filePaths = e.Data.GetData(DataFormats.FileDrop, true) as string[];
-            var file = e.Data;
-            List<string[]> files = new List<string[]>();
+            //var file = e.Data;
+            //List<string[]> files = new List<string[]>();
 
             foreach (var filePath in filePaths)
             {
@@ -70,21 +55,17 @@ namespace CopyFiler
 
                 if (!string.IsNullOrEmpty(fileName))
                 {
-                    string[] fileArr = { fileName, filePath };
-                    files.Add(fileArr);
+                    //string[] fileArr = { fileName, filePath };
+                    //files.Add(fileArr);
 
                     GridCustom grid = new GridCustom();
-                    grid.AddCustomRowToGrid(Grid_Addresses, filePath);                
+                    Create.CustomRowToGrid(Grid_Addresses, filePath);
+
+                    Properties.Settings.Default.CustomerPaths.Add(filePath);
+                    Properties.Settings.Default.Save();
                 }
             }
 
-            if (files.Count() != 0)
-            {
-                CSVWriter.WriteData(files, Globals.FileLinksFile, Globals.DA_Separator);
-            }
-
-            
-            
         }
         private void Button_DefaultAddres_Click(object sender, RoutedEventArgs e)
         {
@@ -92,9 +73,8 @@ namespace CopyFiler
             System.Windows.Forms.DialogResult result = dialog.ShowDialog();
             string selectedPath = dialog.SelectedPath;
 
-            File.WriteAllText(Globals.DefaultAddressFile, string.Empty);
-
-            CSVWriter.WriteText(selectedPath, Globals.DefaultAddressFile, Globals.DA_Separator);
+            Properties.Settings.Default.DefaultPatfh = selectedPath;
+            Properties.Settings.Default.Save();
 
             txBlock_DAdress.Text = selectedPath;
 
@@ -102,19 +82,42 @@ namespace CopyFiler
 
         private string LoadAddresText()
         {
-            IEnumerable<string[]> dAdressText = CSVReader.GetData(Globals.DefaultAddressFile, Globals.DA_Separator);
-            string address = dAdressText.Count() == 0 ? "" : dAdressText.First().ToArray()[1].ToString();
-            return address;
+            return Properties.Settings.Default.DefaultPatfh;
         }
 
-        private void LoadFilesToStack(Grid grid)
+        private void LoadFilesToStack(Grid grid, StringCollection collection)
         {
-            IEnumerable<string[]> files = CSVReader.GetData(Globals.FileLinksFile, Globals.DA_Separator);
-
-            if (files.Count() != 0)
+            if (Properties.Settings.Default.CustomerPaths == null)
             {
-
+                Properties.Settings.Default.CustomerPaths =
+                    new StringCollection();
             }
-        }   
+
+            foreach (var path in collection)
+            {
+                Create.CustomRowToGrid(grid, path);
+            }
+
+        }
+
+        private void Btn_ClearAllFiles_Click(object sender, RoutedEventArgs e)
+        {
+            Grid_Addresses.Children.Clear();
+            Grid_Addresses.RowDefinitions.Clear();
+
+            Properties.Settings.Default.CustomerPaths.Clear();
+            Properties.Settings.Default.Save();
+        }
+
+        private void Grid_Addresses_PreviewMouseUp(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            if (e.Source.GetType() == typeof(ButtonCustom))
+            {
+                int row = Grid.GetRow(e.Source as ButtonCustom);
+
+                Properties.Settings.Default.CustomerPaths.RemoveAt(row);
+                Properties.Settings.Default.Save();
+            }
+        }
     }
 }

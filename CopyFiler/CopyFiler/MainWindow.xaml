@@ -41,7 +41,7 @@
         </Grid.RowDefinitions>
 
         <StackPanel Grid.Row="0" VerticalAlignment="Top" Name="buttonStack" Orientation="Horizontal">
-            <Button Content="Button 2" Width="Auto"/>
+            <Button Content="Copy" Width="Auto" Click="Button_Copy_Click"/>
             <Button Content="Адрес по Подразбиране" Name="Button_DefaultAddres" Click="Button_DefaultAddres_Click"/>
             <Border Margin="5" Padding="0">
                 <TextBox
@@ -61,15 +61,21 @@
                     Drop="Stack_Addresses_Drop"
                     Background="LightYellow" 
                     AllowDrop="True">
-                --><!--<Image Source="{Binding Path=ImageSource, Mode=OneTime}" Width="16" Height="16"/>--><!--
+                -->
+            <!--<Image Source="{Binding Path=ImageSource, Mode=OneTime}" Width="16" Height="16"/>-->
+            <!--
             </StackPanel>-->
-            <Grid Name="Grid_Addresses" Drop="Grid_Addresses_Drop" Background="LightYellow" AllowDrop="True">
-               
+            <Grid Name="Grid_Addresses"
+                  Drop="Grid_Addresses_Drop"
+                  Background="LightYellow"
+                  AllowDrop="True"
+                  PreviewMouseUp="Grid_Addresses_PreviewMouseUp">
+
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="0.5*"/>
-                    <ColumnDefinition Width="1.5*"/>
+                    <ColumnDefinition Width="52"/>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="4*"/>
                     <ColumnDefinition Width="2*"/>
-                    <ColumnDefinition Width="1*"/>
                 </Grid.ColumnDefinitions>
             </Grid>
         </Border>
@@ -79,7 +85,8 @@
                 Height="15"
                 Grid.Row="2"
                 HorizontalAlignment="Left"
-                Content="Изчисти Всички Файлове"/>
+                Content="Изчисти Всички Файлове"
+                Click="Btn_ClearAllFiles_Click"/>
 
     </Grid>
 </Window>

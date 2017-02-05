@@ -42,14 +42,26 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CopyFiler.exe" size="28120">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Calculations.dll" size="5120">
+      <assemblyIdentity name="Calculations" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>ehNhghHbmxPOrok7PFJOJHvWZH0y8htnPhGmgjQaYSA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CopyFiler.exe" size="29656">
       <assemblyIdentity name="CopyFiler" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>ELpfNhm1Hj5GOJlYAp2QUPDWk2RuIHhvgk+r9IerfJk=</dsig:DigestValue>
+        <dsig:DigestValue>jGCwZM9VHc1KGv/GNaQswjVhLRnMk3w2xUptx1DFuo4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -66,24 +78,24 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Factories.dll" size="16896">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Factories.dll" size="16384">
       <assemblyIdentity name="Factories" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>1JmK3wBCaGV7v4X7osBt9EKBOMn1/7F3NXyEWITzGUM=</dsig:DigestValue>
+        <dsig:DigestValue>a7Ewp2r9iTbzXRsnDBVKC+C9RFS0qI9xs6+3Jnuu5wk=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="CopyFiler.exe.config" size="189">
+  <file name="CopyFiler.exe.config" size="917">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>6N7MliNbVJSIAIPrecIshMbZ7zEoKLr5SQvud4LDUOw=</dsig:DigestValue>
+      <dsig:DigestValue>kF1W8Qv53tU/6pcMHDNbkCT+6mJ71BAgN6nYMhUB62g=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

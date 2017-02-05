@@ -8,3 +8,5 @@ C:\Users\NPaunov\Downloads\Google Drive\Tools\CopyFiler\Factories\obj\Debug\Fact
 C:\Users\NPaunov\Downloads\Google Drive\Tools\CopyFiler\Factories\obj\Debug\Factories.dll
 C:\Users\NPaunov\Downloads\Google Drive\Tools\CopyFiler\Factories\obj\Debug\Factories.pdb
 C:\Users\NPaunov\Downloads\Google Drive\Tools\CopyFiler\Factories\obj\Debug\Factories.csprojResolveAssemblyReference.cache
+C:\Users\NPaunov\Downloads\Google Drive\Tools\CopyFiler\Factories\bin\Debug\Calculations.dll
+C:\Users\NPaunov\Downloads\Google Drive\Tools\CopyFiler\Factories\bin\Debug\Calculations.pdb

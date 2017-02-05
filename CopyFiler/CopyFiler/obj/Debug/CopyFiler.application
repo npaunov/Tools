@@ -7,14 +7,14 @@
     <framework targetVersion="4.5.2" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="CopyFiler.exe.manifest" size="4737">
+    <dependentAssembly dependencyType="install" codebase="CopyFiler.exe.manifest" size="5378">
       <assemblyIdentity name="CopyFiler.exe" version="1.0.0.1" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>RtIWXtmi/sS/IQcDd5var+O+LE6liAOkfsYZiTUNjEg=</dsig:DigestValue>
+        <dsig:DigestValue>yOpbH7djW9wWxjiqHMpF7/4l2qXbI+DGYzyz1Q2d9qE=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

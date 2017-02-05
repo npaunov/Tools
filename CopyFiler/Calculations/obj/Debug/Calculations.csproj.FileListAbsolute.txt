@@ -1,0 +1,5 @@
+C:\Users\NPaunov\Downloads\Google Drive\Tools\CopyFiler\Calculations\bin\Debug\Calculations.dll
+C:\Users\NPaunov\Downloads\Google Drive\Tools\CopyFiler\Calculations\bin\Debug\Calculations.pdb
+C:\Users\NPaunov\Downloads\Google Drive\Tools\CopyFiler\Calculations\obj\Debug\Calculations.csprojResolveAssemblyReference.cache
+C:\Users\NPaunov\Downloads\Google Drive\Tools\CopyFiler\Calculations\obj\Debug\Calculations.dll
+C:\Users\NPaunov\Downloads\Google Drive\Tools\CopyFiler\Calculations\obj\Debug\Calculations.pdb
